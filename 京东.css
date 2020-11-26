@@ -1,0 +1,513 @@
+/*********************************全局***********************************/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+a:link,a:visited{
+    color:#5e5e5e;
+}
+a:hover{
+    color:orangered;
+}
+
+body{
+    font-family:"微软雅黑";
+    color:#14191E;
+}
+
+.All {
+    width: 100%;
+    height: 2000px;
+    position: absolute;
+    top:0px;
+    overflow: hidden;
+}
+.background{
+    background-image: url("img/background.png");
+    width:1900px;
+    height:800px;
+    z-index: 1;
+    position: relative;
+    top:220px;
+    margin:auto;
+    background-repeat: no-repeat;
+}
+/*********************************导航栏***********************************/
+.navi{
+    width: 100%;
+    height: 30px;
+    background-color: #e3e4e5;
+}
+.innavi{
+    width:1190px;
+    height: 100%;
+    position: relative;
+    margin: auto;
+}
+.navi_a:hover{
+    color:red;
+}
+.innavi1{
+    width:58px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float:left;
+    color:#666;
+    padding-left: 7px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.innavi2{
+    min-width:718px;
+    height: 30px;
+    float:right;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.innavi2_text{
+    min-width:60px;
+    height: 100%;
+    float:right;
+    text-align: center;
+    color:#666;
+    font-family: "微软雅黑";
+    font-size: 12px;
+}
+.innavi2_space{
+    width:1px;
+    height: 12px;
+    overflow: hidden;
+    margin: 9px 5px 0;
+    background-color: #ccc;
+    float:right;
+}
+.innavi2_li{
+    text-align: center;
+    list-style: none;
+    float:right;
+    margin:0 5px
+}
+
+/*********************************搜索栏***********************************/
+
+
+.main{
+    background-color: #f4f4f4;
+    z-index: 2;
+}
+.first_div {
+    width: 100%;
+    height: 140px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.infirst_div{
+    width: 1190px;
+    height:100%;
+    position: relative;
+    margin:auto;
+}
+.infirst_div_1{
+    width:190px;
+    height:100%;
+    position: relative;
+    background-color: #fff;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    float: left;
+    top:-8px;
+}
+.main_1{
+    width:1190px;
+    height: 480px;
+    position: relative;
+    margin:auto;
+    z-index: 2;
+}
+.infirst_div_2{
+    position: absolute;
+    left: 300px;
+    top:50px;
+}
+.sousuo{
+    width:560px;
+    height:34px;
+    /* outline:none; */
+    /* -webkit-appearance: none; */
+    text-shadow: none ;
+    /* border-radius: 15px 0 0px 15px; *//*调整弧度*/
+    }
+.sousuobutton{
+position: absolute;;
+width:60px;
+height: 35px;
+top:2px;
+left:504px;
+}
+.infirst_div_5{
+    width:60px;
+    height: 60px;
+    border:1px solid  rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255);
+    position: absolute;
+    left: 1100px;
+    top:5px;
+    padding:10px 10px 10px 10px;
+}
+/*********************************菜单***********************************/
+.menu-box{
+    position: absolute;
+    left:0px;
+    top:5px;
+    width:200px;
+    height: 475px;
+    background-color: rgba(227,228,229);
+    z-index: 1;
+    font-style:#000;
+}
+.menu-content{
+    position: absolute;
+    left:0;
+    top:0;
+    width:200px;
+    height: 470px;
+    z-index:2;
+}
+.menu-item{
+    height:50px;
+    line-height: 50px;
+    cursor:pointer;
+    padding:0 24px;
+}
+.menu-item a{
+    display:block;/*块级元素*/
+    font-size:16px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    height: 49px;
+    padding:0 8px;
+}
+.menu-item:last-child a{
+    border-bottom: none;
+}
+
+.menu-item:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+/* 二级菜单 */
+.sub-menu{
+    width:500px;
+    height: 473px;
+    z-index:3;
+    position: absolute;
+    left:200px;
+    top:5px;
+    background-color: #fff;
+    border:1px solid #d9dde1;
+    box-shadow:0 4px 8px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.inner-box{
+    width:100%;
+    height: 100%;
+    display:none;
+}
+.sub-inner-box{
+    width:560px;
+    margin-left: 40px;
+
+    overflow: hidden;
+
+}
+.title{
+    width:100px;
+    height:25px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #000;
+    color:#fff;
+    float:left;
+    margin:28px 5px 30px 5px;
+}
+
+.sub-row{
+    width:100%;
+    clear:both;
+    margin-bottom: 25px;
+}
+.bold{
+    font-weight: 700;
+}
+.mr10{
+    margin-right:10px;
+}
+.ml10{
+    margin-left:10px;
+}
+
+.hide{
+    display:none;
+} 
+
+/*********************************轮播图***********************************/
+.banner{
+    position: absolute;
+    left:210px;
+    top:5px;
+    width:596px;
+    height:475px;
+    overflow: hidden;
+}
+
+.banner-slide{
+    
+    width:596px;
+    height:475px;
+    float:left;
+    background-repeat: no-repeat;
+    display:none;
+}
+
+.slide-active{
+    display:block;
+}
+.slide1{
+    width:100%;
+    height:100%;
+    background-image: url("img/轮播2.jpg");
+}
+
+.slide2{
+    width:100%;
+    height:100%;
+    background-image: url("img/轮播1.jpg");
+}
+.slide3{
+    width:100%;
+    height:100%;
+    background-image: url("img/轮播3.png");
+}
+.slide4{
+    width:100%;
+    height:100%;
+    background-image: url("img/轮播4.jpg");
+}
+.slide5{
+    width:100%;
+    height:100%;
+    background-image: url("img/轮播5.png");
+}
+
+/* 按钮 */
+.button{
+    position: absolute;
+    left:210px;
+    top:50%;
+    width:60px;
+    height:76px;
+    margin-top: -40px;
+    background: url("img/button.png") center center;
+    transform: rotate(180deg);
+}
+
+.button:hover{
+    background-color: rgba(7,17,27,0.3) ;
+}
+.next{
+    left:746px;
+    transform: rotate(360deg);
+}
+
+.dots{
+    position: absolute;
+    right:410px;
+    bottom:16px;
+    line-height: 12px;
+}
+.dots span{
+    display:inline-block;/*同一水平线*/
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: rgba(7,17,27,0.4);
+    margin-left: 8px;
+    box-shadow: 0 0 0 1.5px rgba(255,255,255,0.8) inset;
+    cursor: pointer;/*手型*/
+}
+
+.dots span.active {
+    background-color: #fff;
+    box-shadow:0 0 0 1.5px rgba(7,17,27,0.4) inset;
+}
+
+/*********************************精灵图***********************************/
+.spirit{
+    width:374px;
+    height:475px;
+    position: absolute;
+    left:816px;
+    top:5px;
+}
+.spirit1{
+    width:125px;
+    height:118.75px;
+    background: url("img/精灵图.png");
+    background-position: 0 -5px;
+}
+.spirit2{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:125px;
+    top:0;
+    background: url("img/精灵图.png");
+    background-position: -125px -5px;
+}
+.spirit3{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:250px;
+    top:0;
+    background: url("img/精灵图.png");
+    background-position: -250px -5px;
+}
+.spirit4{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:0;
+    top:118.75px;
+    background: url("img/精灵图.png");
+    background-position: 0 -118.75px;
+}
+.spirit5{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:125px;
+    top:118.75px;
+    background: url("img/精灵图.png");
+    background-position: -125px -118.75px;
+}
+.spirit6{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:250px;
+    top:118.75px;
+    background: url("img/精灵图.png");
+    background-position: -250px -118.75px;
+}
+.spirit7{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:0px;
+    top:237.5px;
+    background: url("img/精灵图.png");
+    background-position: 0px -226.5px;
+}
+.spirit8{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:125px;
+    top:237.5px;
+    background: url("img/精灵图.png");
+    background-position: -125px -226.5px;
+}
+.spirit9{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:250px;
+    top:237.5px;
+    background: url("img/精灵图.png");
+    background-position: -250px -226.5px;
+}
+.spirit10{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:0px;
+    top:356.25px;
+    background: url("img/精灵图.png");
+    background-position: 0px -343.25px
+}
+.spirit11{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:125px;
+    top:356.25px;
+    background: url("img/精灵图.png");
+    background-position: -125px -343.25px;
+}
+.spirit12{
+    width:125px;
+    height:118.75px;
+    position: absolute;
+    left:250px;
+    top:356.25px;
+    background: url("img/精灵图.png");
+    background-position: -250px -343.25px;
+}
+.spi:hover{
+    background-color: rgba(0,0,0,0.1);
+}
+
+/*********************************倒计时***********************************/
+.main2{
+    width:100%;
+    height:320px;
+    background-color:#f4f4f4;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.inmain2{
+    width:1190px;
+    height:260px;
+    position: relative;
+    top:20px;
+    margin: auto;
+    background-color: black;
+    overflow: hidden;
+}
+.setTime{
+    
+    position: relative;
+    top:167px;
+    left:32px;
+}
+.time{
+    width:190px;
+    height: 260px;
+    background: url("img/倒计时.png");
+    background-repeat: no-repeat;
+}
+#remainDays{
+    position: relative;
+    top:178px;
+    left:32px;
+
+}
+.footer{
+    width:100%;
+    height: 1000px;
+    background-color:#f4f4f4;
+}
+.timeright{
+    width:1000px;
+    height: 100%;
+    position: absolute;
+    left:190px;
+    top:0;
+    background: url("img/timeright.png");
+}
